@@ -1,0 +1,9 @@
+;<Write a program to exchange the content of register pair BC and DE with the use of XCHG instruction. Assume data AABBH and CCDDH are in register pair BC and DE respectively>
+LXI B, 0AABBH
+LXI D, 0CCDDH
+MOV L, C
+MOV H, B
+XCHG
+MOV C, L
+MOV B, H
+HLT
